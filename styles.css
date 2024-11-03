@@ -1,0 +1,134 @@
+/* Header styling */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff; /* Dark background for contrast */
+    color: #fff;
+}
+
+/* Logo styling */
+.logo-container {
+    flex-shrink: 0;
+}
+
+.logo {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+    animation: alternate-reverse;
+    animation-duration: initial;
+}
+.bImage {
+    height: 500px; /* Adjust height as needed */
+    width: auto;
+    animation: alternate-reverse;
+    animation-duration: initial;
+}
+.autoAll {
+    height: 500px; /* Adjust height as needed */
+    width: auto;
+    animation: alternate-reverse;
+    animation-duration: initial;
+}
+/* Navigation menu styling */
+.nav-menu a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-menu a:hover {
+    color: #ddd; /* Hover effect */
+}
+
+
+/* Footer container */
+.animated-footer {
+
+    position: relative;
+    background-color: #87CEEB; /* Sky color */
+    height: 300px;
+    overflow: hidden;
+}
+
+/* Scene styling */
+.scene {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Background with trees and homes */
+.background {
+    position: absolute;
+    bottom: 100px; /* Position above the road */
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding-left: 50px;
+}
+
+.tree, .home {
+    background-color: #228B22; /* Green for tree, or brown */
+    width: 40px;
+    height: 80px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.home {
+    background-color: #8B4513; /* Different color for home */
+    width: 60px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+}
+
+
+/* Road styling */
+.road {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #555; /* Road color */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Vehicle styling */
+.vehicle {
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.car {
+    background-color: #FF0000;
+    animation: driveLeftToRight 5s linear infinite;
+}
+
+.bicycle {
+    background-color: #00FF00;
+    width: 30px;
+    height: 20px;
+    animation: driveLeftToRight 7s linear infinite;
+}
+
+/* Animation for cars and bicycles */
+@keyframes driveLeftToRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+.section h2 {
+    color: #f3a20c;
+}
+
