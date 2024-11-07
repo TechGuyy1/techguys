@@ -12,15 +12,19 @@
         <img src=".\logo.png" alt="TechGuys Logo" class="logo">
         <!-- <img src="path/to/logo.png" alt="TechGuys Logo" class="logo"> -->
     </div>
-    <nav class="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://forms.gle/rFQviqAZPVMARqkA7" class="contact-button">Enroll</a>
+    <nav class="nav">
+<ul class="nav-links">  
+    <li><a href="index.html">Home</a></li>
+   <li><a href="courses.html">Courses</a></li>   
+   <Li><a href="contact.html">Contact</a></Li> 
+   <Li><a href="practice.html">Practice</a></Li>
+   <Li><a href="https://forms.gle/rFQviqAZPVMARqkA7" class="contact-button">Enroll</a></Li>
+</ul>        
     </nav>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
 </header>
-
 <main>
+   
     <h1>Welcome to TechGuys,Transforming the automation journey</h1>
     <p>We are here to train the under graduate, graduate and experience guys who wants to transfrom there IT career journey into software automation...!  </p>
     <!-- <div class="logo-container">
@@ -31,6 +35,26 @@
 </p>
 
 </main>
-  
+<div class="demo-container">
+    <h1>Login Page Simulation</h1>
+    <div class="browser-window">
+        <div class="browser-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="url-bar">https://techguyy1.github.io/techguys/</span>
+        </div>
+        <div class="form-container">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            
+            <button id="submit-button">Login</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
