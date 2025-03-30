@@ -1,7 +1,7 @@
-function toggleMenu() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('active');
-}
+// function toggleMenu() {
+//     const nav = document.querySelector('.nav');
+//     nav.classList.toggle('active');
+// }
 
 
 // Simulating cursor movement
