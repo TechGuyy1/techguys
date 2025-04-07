@@ -598,20 +598,42 @@ img {
   display: grid;
   border: 1px solid ;
   grid-template-columns:repeat(auto-fit, 200px );
-  gap: 15px;
+  gap: 1px;
   justify-content: center;
   text-align: center;
 
 }
 .techstack{
   display: grid;
-  border: 1px solid ;
+  /* border: 1px solid ; */
   grid-template-columns:repeat(auto-fit, 100px );
-  gap: 15px;
+  gap: 1px;
   justify-content: center;
-  text-align: center;
+  text-align: center(--text-color);
 
   .h5{
     align-items: center;
   }
+}
+
+
+.downloadimg {
+  border: 1px solid #099232;
+  border-radius: 4px;
+  padding: 5px;
+  /* width: 150px; */
+  width: 50px;   /* Set desired width */
+  height: 50px;
+  max-height: 50%;
+  max-width: 50%;  /* Set desired height */
+  /* object-fit: cover Optional: ensures the image covers the area without distortion */
+  /* size: (3px 3px); */
+}
+
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: 0;
 }
