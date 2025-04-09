@@ -639,3 +639,7 @@ h1 {
 h2 {
   letter-spacing: 0;
 }
+h6{
+ motion-rotation: auto;
+ color-scheme: red;
+}
