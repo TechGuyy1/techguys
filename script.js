@@ -89,4 +89,13 @@ function closeSidebar(){
 //   })
 // })
 
+let popup=document.getElementById("popup");
+function openPopup(){
+  popup.classList.add("open-popup");
+
+}
+function clsoePoppu(){
+  popup.classList.add("close-popup");
+
+}
 updateNavbar(media)

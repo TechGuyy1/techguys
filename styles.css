@@ -643,3 +643,36 @@ h6{
  motion-rotation: auto;
  color-scheme: red;
 }
+.pop-up{
+  
+  width: 500px;
+  background: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(100%,100%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden; */
+  /* transform: translate(-50%,-50%) scale(1); */
+  transform: align-items: ;
+
+}
+.open-popup{
+  visibility: visible;
+  width: 500px;
+  align-self: center;
+  top: 0%;
+  left: 0%;
+  /* align-self: auto; */
+  transform: translate(100%,100%) scale(1);
+  /* text-align: center;
+  padding: 0 30px 30px;
+  color: #333; */
+ 
+}
+.close-popup{
+  visibility: hidden;
+}
