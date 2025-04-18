@@ -98,4 +98,63 @@ function clsoePoppu(){
   popup.classList.add("close-popup");
 
 }
+
+function openPopup(pageUrl) {
+  document.getElementById("popupIframe").src = pageUrl;
+  document.getElementById("popupModal").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popupModal").style.display = "none";
+  document.getElementById("popupIframe").src = "";
+}
+
+// Optional: Close modal when clicking outside content
+window.onclick = function(event) {
+  const modal = document.getElementById("popupModal");
+  if (event.target === modal) {
+    closePopup();
+  }
+}
+//Typing effects
+const speed = 75; // typing speed per character in ms
+    const h2s = document.querySelectorAll('h1,h2');
+    // const h1s = document.querySelectorAll('h1');
+
+    function typeEffect(element, text, index, callback) {
+      if (index < text.length) {
+        element.innerHTML += text.charAt(index);
+        setTimeout(() => {
+          typeEffect(element, text, index + 1, callback);
+        }, speed);
+      } else {
+        element.style.borderRight = "none"; // remove cursor
+        if (callback) callback();
+      }
+    }
+
+    function startTypingAllH2s(i = 0) {
+      if (i < h2s.length) {
+        const h2 = h2s[i];
+        const fullText = h2.textContent;
+        h2.textContent = '';
+        typeEffect(h2, fullText, 0, () => {
+          startTypingAllH2s(i + 1); // start next h2 after current is done
+        });
+      }
+    }
+
+    function startTypingAllH1s(i = 0) {
+      if (i < h1s.length) {
+        const h1 = h1s[i];
+        const fullText = h1.textContent;
+        h1.textContent = '';
+        typeEffect(h1, fullText, 0, () => {
+          startTypingAllH1s(i + 1); // start next h1 after current is done
+        });
+      }
+    }
+    window.onload = () => startTypingAllH1s();
+    window.onload = () => startTypingAllH2s();
+    
 updateNavbar(media)
