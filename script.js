@@ -157,4 +157,30 @@ const speed = 75; // typing speed per character in ms
     window.onload = () => startTypingAllH1s();
     window.onload = () => startTypingAllH2s();
     
+    function showForm() {
+      document.getElementById('registrationForm').style.display = 'block';
+    }
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent form refresh
+
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const gender = document.querySelector('input[name="gender"]:checked')?.value || '';
+      const address1 = document.getElementById('address1').value;
+      const city = document.getElementById('city').value;
+      const state = document.getElementById('state').value;
+      const country = document.getElementById('country').value;
+
+      if (!firstName || !lastName || !gender || !address1 || !city || !state || !country) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      const registrationNumber = 'REG' + Math.floor(100000 + Math.random() * 900000);
+
+      document.getElementById('message').innerText = 
+        `🎉 Registration successful! Your registration number is ${registrationNumber}.`;
+        document.getElementById('registrationForm').reset();
+
+    });
 updateNavbar(media)

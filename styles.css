@@ -744,3 +744,32 @@ h6{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
+/* //Registration form */
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, select {
+  padding: 8px;
+  width: 300px;
+}
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#registrationForm {
+  display: none;
+  margin-top: 20px;
+}

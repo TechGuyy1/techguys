@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('./background.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        backdrop-filter: blur(px); /* optional blur for effect */
+      }
+      
+      form, .modal-content {
+        background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(152, 171, 180, 0.3);
+        font-size: medium;
+        text-decoration: solid;
+ 
+      
+        
+        width: 100%;
+        height: 100%;
+    
+
+      }
+      
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select {
+      padding: 2px;
+      width: 300px;
+    }
+    .radio-group {
+      display:-ms-flexbox;
+      gap: 2px;
+    }
+ /*   #registrationForm {
+      display: none;
+      margin-top: 20px;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 60%; height: 60%;
+      background-color: rgba(0,0,0,0.5);
+
+    }
+
+    .modal-content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .modal-content h3 {
+      color: green;
+      margin-top: 10px;
+    }
+
+    .checkmark {
+      font-size: 60px;
+      color: green;
+    }
+
+    .close-btn {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body background="img" img=".">
+
+  <h2>User Registration</h2>
+
+  <!-- <button onclick="showForm()">Start Registration</button> -->
+
+  <form id="registrationForm">
+    <div class="form-group">
+        <h4>Personal Info</h4>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required>
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" required>Male</label>
+        <label><input type="radio" name="gender" value="Female">Female</label>
+        <label><input type="radio" name="gender" value="Other">Other</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+        <h4>Communication Details</h4>
+      <label for="address1">Address Line 1:</label>
+      <input type="text" id="address1" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address2">Address Line 2:</label>
+      <input type="text" id="address2">
+    </div>
+
+    <div class="form-group">
+      <label for="city">City:</label>
+      <select id="city" required>
+        <option value="">--Select City--</option>
+        <option value="New York">New York</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Los Angeles">Los Angeles</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="state">State:</label>
+      <select id="state" required>
+        <option value="">--Select State--</option>
+        <option value="NY">New York</option>
+        <option value="CA">California</option>
+        <option value="IL">Illinois</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country" required>
+        <option value="">--Select Country--</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="lastName">Phone number</label>
+        <input type="text" id="lastName" required>
+      </div>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Modal Popup -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <div class="checkmark">✅</div>
+      <h3>Registration Successful!</h3>
+      <p id="regNumberText"></p>
+      <button class="close-btn" onclick="closeModal()">OK</button>
+    </div>
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById('registrationForm').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('successModal').style.display = 'none';
+    }
+
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const gender = document.querySelector('input[name="gender"]:checked')?.value || '';
+      const address1 = document.getElementById('address1').value;
+      const city = document.getElementById('city').value;
+      const state = document.getElementById('state').value;
+      const country = document.getElementById('country').value;
+
+      if (!firstName || !lastName || !gender || !address1 || !city || !state || !country) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      const registrationNumber = 'REG' + Math.floor(100000 + Math.random() * 900000);
+      document.getElementById('regNumberText').innerText = 
+        `Your registration number is ${registrationNumber}`;
+
+      document.getElementById('successModal').style.display = 'block';
+      document.getElementById('registrationForm').reset();
+    });
+  </script>
+
+</body>
+</html>
