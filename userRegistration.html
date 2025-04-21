@@ -147,6 +147,18 @@
       cursor: pointer;
       border-radius: 5px;
     }
+    button {
+        display: inline-block;
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
   </style>
 </head>
 <body background="img" img=".">
@@ -221,7 +233,7 @@
         <input type="text" id="phone-number" required>
       </div>
 
-    <button type="submit">Register</button>
+    <button type="submit" id="btn-primary">Register</button>
   </form>
 
   <!-- Modal Popup -->
@@ -253,13 +265,14 @@
       const city = document.getElementById('city').value;
       const state = document.getElementById('state').value;
       const country = document.getElementById('country').value;
+      const mobileNum=document.getElementById('phone-number').value;
       if (!firstName || !lastName || !gender || !address1 || !city || !state || !country) {
         alert("Please fill in all required fields.");
         return;
       }
    //   Math.floor(100000 + Math.random() * 900000)
       
-      const registrationNumber = 'REG' +  Math.floor(100000 + Math.random() * 900000) ;
+      const registrationNumber = 'REG' + mobileNum ;
       document.getElementById('regNumberText').innerText = 
         `Your registration number is ${registrationNumber}`;
 
