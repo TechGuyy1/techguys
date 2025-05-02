@@ -51,13 +51,30 @@
             <h2>01 Selenium Intro!</h2>
             <br>
             <p>Project set up : 1> Install Java 2. Create a maven project 3. add dependenceies in pom .xml file</p>
-          <br>
-            <a href="./TrainingDoc/Session 001 Introduction to Selenium Webdriver.docx" download="Session01"><img src="./worldfileicon.png" class="downloadimg"></a>
+            <button onclick="openPopup('./TrainingDoc/Session 001 Introduction to Selenium Webdriver.htm')">See Example ☰</button>
+            <div id="popupModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <div class="watermark">Rameshwar Chavan</div>
+                <iframe id="popupIframe" src=""></iframe>
+              </div>
+              </div>
           </div>
           <div class="card">
             <h2>02 First Test</h2>
             <br>
-            <p> First auto test : Open browser and navigate to URl</p>
+            <p>First auto test : Open browser and navigate to URl</p>
+            <br>
+            <!-- <a href="./TrainingDoc/Java Control Statement.htm" download="Session01"><img src="./pdfpng.png" class="downloadimg"></a> -->
+            <button onclick="openPopup('./TrainingDoc/Session 001 Introduction to Selenium Webdriver.htm')">See Example ☰</button>
+            <div id="popupModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <div class="watermark">Rameshwar Chavan</div>
+                <iframe id="popupIframe" src=""></iframe>
+              </div>
+            </div>
+          
           </div>
           <div class="card">
             <h2>03 Locating Elements</h2>
