@@ -1,0 +1,436 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:0 0 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-IN style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1><b><span lang=EN-US style='font-size:18.0pt;line-height:107%;color:black;
+background:darkcyan'>Selenium Web Driver Locators</span></b><b><span
+lang=EN-US style='font-size:18.0pt;line-height:107%;color:black'> </span></b></h1>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:14.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:14.0pt;line-height:107%'>As a
+part of automation, selenium performs actions such as click, enter input on the
+web page. Hence to perform that action we need to locate the element on
+webpage.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-size:14.0pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:14.0pt;line-height:107%'>By
+using <b>locators</b>, we can identify the web element on the HTML webpage.
+Selenium Web Driver uses any of the following locator to identify the web
+element on the webpage.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;line-height:107%;
+background:darkgray'>Selenium provides support for below 8 traditional location
+strategies in WebDriver:</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt;line-height:
+107%;background:darkcyan'>Types of locators</span></b><b><span lang=EN-US
+style='font-size:14.0pt;line-height:107%'> </span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt;line-height:
+107%'>&nbsp;</span></b></p>
+
+<table class=MsoTable15Grid2 border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border-top:none;border-left:solid windowtext 1.0pt;
+  border-bottom:solid #666666 1.5pt;border-right:none;background:#A8D08D;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  lang=EN-US style='font-size:14.0pt;color:black'>Locator</span></b></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border:none;border-bottom:solid #666666 1.5pt;
+  background:#A8D08D;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  style='font-size:14.0pt;color:black'>Description</span></b></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid #666666 1.5pt;border-right:solid windowtext 1.0pt;
+  background:#A8D08D;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><b><span
+  style='font-size:14.0pt;color:black'>Example</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'>id</span></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'>Locates elements whose ID
+  attribute matches the search value</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'><img width=338 height=20
+  src="Locator%20in%20Selenium_files/image001.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'>class name</span></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'>Locates elements whose class name
+  contains the search value</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'><img width=368 height=20
+  src="Locator%20in%20Selenium_files/image002.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'>name</span></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'>Locates elements whose NAME
+  attribute matches the search value</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'><img width=346 height=23
+  src="Locator%20in%20Selenium_files/image003.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'>tag name</span></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'>Locates elements whose tag name matches the search
+  value</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  style='font-size:14.0pt'><img width=304 height=23
+  src="Locator%20in%20Selenium_files/image004.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'>css selector </span></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'>Locates elements matching a
+  CSS selector</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'><img width=349 height=15
+  src="Locator%20in%20Selenium_files/image005.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'>link text </span></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'>Locates anchor elements whose visible
+  text matches the search value</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'><img width=346 height=13
+  src="Locator%20in%20Selenium_files/image006.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'>Partial link text</span></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'>Locates anchor elements whose
+  visible text contains the search value. If multiple elements are matching,
+  only the first one will be selected.</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#CCCCCC;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt;color:black'><img width=294 height=13
+  src="Locator%20in%20Selenium_files/image007.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=76 valign=top style='width:2.0cm;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'>xpath</span></p>
+  </td>
+  <td width=217 valign=top style='width:162.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'>Locates elements matching an XPath
+  expression</span></p>
+  </td>
+  <td width=308 valign=top style='width:231.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;line-height:normal'><span
+  lang=EN-US style='font-size:14.0pt'><img width=327 height=15
+  src="Locator%20in%20Selenium_files/image008.png"></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;line-height:107%'><img
+width=366 height=159 src="Locator%20in%20Selenium_files/image009.png"></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;line-height:107%'><img
+width=602 height=359 src="Locator%20in%20Selenium_files/image010.png"></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:14.0pt;line-height:107%;font-family:Symbol;
+background:gray'><img width=16 height=16
+src="file:///C:/Users/AKANKSHA/AppData/Local/Temp/BDDC3E80.gif" alt="*"><span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+lang=EN-US style='font-size:14.0pt;line-height:107%;background:gray'>Key points:</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle><b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>driver-&gt;</span></b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'> It is an object or instance of ChromeDriver() class created
+using the Webdriver interface.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>findElement -&gt;</span></b><span lang=EN-US
+style='font-size:14.0pt;line-height:107%'> is a WebDriver method </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>By -&gt;</span></b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'> Predefined class in selenium</span></p>
+
+<p class=MsoListParagraphCxSpLast><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt;line-height:
+107%;background:darkcyan'>Types of Xpath</span></b></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><b><span lang=EN-US
+style='font-size:14.0pt;line-height:107%;background:yellow'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=EN-US style='font-size:14.0pt;line-height:107%;background:yellow'>Absolute
+Xpath</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span lang=EN-US
+style='font-size:14.0pt;line-height:107%'>It’s a direct way of finding an
+element on webpage, it’s a full path from the root of the HTML document to the
+input field. It relies on the exact structure of the webpage, making it longer
+and more prone to breaking if the structure changes.</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><b><span lang=EN-US
+style='font-size:14.0pt;line-height:107%'>Example </span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='font-size:14.0pt;line-height:107%'>   <span style='background:teal'>//*[@id=&quot;navbar&quot;]/ul/li[3]/a</span></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><b><span
+lang=EN-US style='font-size:14.0pt;line-height:107%;background:yellow'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b><b><span
+lang=EN-US style='font-size:14.0pt;line-height:107%;background:yellow'>Relative
+Xpath</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>It’s a technique to find the element on webpage by giving precise
+path from the HTML document root. With the help of tag and associated attribute
+we can create absolute xpath in selenium. It will directly locate/search
+element on the web page by its tag name and associated attributes. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle><b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>Syntax: </span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'><img width=280 height=27
+src="Locator%20in%20Selenium_files/image011.png"></span></p>
+
+<p class=MsoListParagraphCxSpLast><b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>Example:</span></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US>       <img
+width=207 height=23 src="Locator%20in%20Selenium_files/image012.png"></span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt;line-height:
+107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt;line-height:
+107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;line-height:107%;
+background:yellow'>** HTML Tag list:</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt;line-height:
+107%'><img width=498 height=767 id="Picture 1"
+src="Locator%20in%20Selenium_files/image013.png"></span></b><b><span
+lang=EN-US style='font-size:14.0pt;line-height:107%'> </span></b></p>
+
+<p class=MsoListParagraphCxSpFirst><b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpLast><b><span lang=EN-US style='font-size:14.0pt;
+line-height:107%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt;line-height:
+107%'>&nbsp;</span></b></p>
+
+</div>
+
+</body>
+
+</html>
