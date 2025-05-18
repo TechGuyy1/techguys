@@ -773,3 +773,21 @@ input, select {
   display: none;
   margin-top: 20px;
 }
+/* button {
+  display: inline-block;
+  background-color: #283747;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+} */
+button:hover {
+  /* background-color: #283747; */
+  background-color:green;
+  transform: translateY(-4px)
+  ;
+}
